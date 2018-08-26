@@ -2,29 +2,21 @@ html
 	head
 		include template/head.pug
 	body
-		#fullPageContainer
-			.section
-				#posterParallax.posterWrap
-					.posterWrap__posterBg.layer(data-depth="0.3")
-					.posterWrap__posterBg.layer(data-depth="0.5")
-					#large-header.posterWrap__posterBgOverlay
-						canvas#demo-canvas
-					.posterWrap__posterArtist.layer(data-depth="0.8")
-					.posterWrap__posterNameArtistWrap.layer(data-depth="1")
-						p.posterWrap__posterNameArtist MIGOS
-			.section
-				.newsGridWrap
-					mixin newsCellWrapMix(nameBgCellMix, titleCellMix, paragraphCellMix)
-						figure.newsGridWrap__cell
-							div(class=`newsGridWrap__img newsGridWrap__img_bg-${nameBgCellMix}`)
-							figcaption.newsGridWrap__contentWrap
-								article.newsGridWrap__contentBox
-									h2.newsGridWrap__title= titleCellMix
-									p.newsGridWrap__paragraph= paragraphCellMix
-					+newsCellWrapMix('1', 'CULTURE II', 'Lily likes to play with crayons and pencils')
-					+newsCellWrapMix('2', 'MIGOS', 'Lily likes to play with crayons and pencils')
-					+newsCellWrapMix('3', 'NEW VIDEO', 'Lily likes to play with crayons and pencils')
-					+newsCellWrapMix('4', 'TOP NEWS', 'Lily likes to play with crayons and pencils')
-					+newsCellWrapMix('5', 'OFFSET T-SHIRT', 'Lily likes to play with crayons and pencils')
-					+newsCellWrapMix('6', 'MIGOS QUAVO', 'Lily likes to play with crayons and pencils')
+		header.header
+			nav.header__nav
+				ul.header__list
+					mixin verticalListItemMix(link, nameLink)
+						li.header__itemList
+							a(class="header__itemLink" href=(`${link}`))= nameLink
+					+verticalListItemMix('#', 'HOME')
+					+verticalListItemMix('#', 'PORTFOLIO')
+					+verticalListItemMix('#', 'ABOUT US')
+				.header__logo
+				ul.header__list
+					mixin verticalListItemMix(link, nameLink)
+						li.header__itemList
+							a(class="header__itemLink" href=(`${link}`))= nameLink
+					+verticalListItemMix('#', 'HOME')
+					+verticalListItemMix('#', 'PORTFOLIO')
+					+verticalListItemMix('#', 'ABOUT US')
 		include template/scripts.pug
