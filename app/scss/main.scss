@@ -1,1 +1,50 @@
 @import '../../bower_components/reset.scss/reset.scss';
+.header {
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	z-index: 999;
+	background-color: red;
+
+	.header__nav {
+		width: 70%;
+		height: 100%;
+		margin: 0 auto;
+		background-color: blue;
+
+		.header__list {
+			width: 40%;
+			height: 100%;
+			display: block;
+			float: left;
+			background-color: yellow;
+
+			.header__itemList {
+				width: 33.333333333%;
+				height: 100%;
+				display: block;
+				float: left;
+				text-align: center;
+				display: table;
+
+				.header__itemLink {
+					display: table-cell;
+					vertical-align: middle;
+					font-family: 'Roboto', sans-serif;
+					font-size: 1.5vmin;
+					color: #fff;
+				}
+			}
+		}
+		.header__logo {
+			width: 20%;
+			height: 100%;
+			display: block;
+			float: left;
+			background-color: pink;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	}
+}
