@@ -23,4 +23,9 @@ html
 		main.container
 			section.homeBlock
 				.homeBlock__logoBox
+			mixin verticalListItemMix(link, nameLink)
+				include productSection.pug
+			+verticalListItemMix('#', 'HOME')
+			+verticalListItemMix('#', 'PORTFOLIO')
+			+verticalListItemMix('#', 'ABOUT US')
 		include template/scripts.pug

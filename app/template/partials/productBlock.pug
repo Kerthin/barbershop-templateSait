@@ -1,0 +1,14 @@
+div(class=`productBlock`)
+	.productBlock__contentBox
+		.productBlock__contentTitleWrap
+			h1.productBlock__contentTitle= contentTitleMix
+		.productBlock__contentSubtitleWrap
+			h2.productBlock__contentSubtitle= contentSubtitleMix
+		.productBlock__productItemsWrap
+			case `${productBlockType}`
+				when 'large'
+					include largeItem.pug
+				when 'twoItems'
+					include twoItems.pug
+				when 'fourItems'
+					include fourItems.pug
