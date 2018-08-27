@@ -5,27 +5,27 @@ html
 		header.header
 			nav.header__nav
 				ul.header__list
-					mixin verticalListItemMix(link, nameLink)
+					mixin horizontalListItemMix(link, nameLink)
 						li.header__itemList
 							a(class="header__itemLink" href=(`${link}`))= nameLink
-					+verticalListItemMix('#', 'HOME')
-					+verticalListItemMix('#', 'PORTFOLIO')
-					+verticalListItemMix('#', 'ABOUT US')
+					+horizontalListItemMix('#', 'HOME')
+					+horizontalListItemMix('#', 'PORTFOLIO')
+					+horizontalListItemMix('#', 'ABOUT US')
 				.header__logoWrap
 					.header__logo
 				ul.header__list
-					mixin verticalListItemMix(link, nameLink)
+					mixin horizontalListItemMix(link, nameLink)
 						li.header__itemList
 							a(class="header__itemLink" href=(`${link}`))= nameLink
-					+verticalListItemMix('#', 'HOME')
-					+verticalListItemMix('#', 'PORTFOLIO')
-					+verticalListItemMix('#', 'ABOUT US')
+					+horizontalListItemMix('#', 'HOME')
+					+horizontalListItemMix('#', 'PORTFOLIO')
+					+horizontalListItemMix('#', 'ABOUT US')
 		main.container
 			section.homeBlock
 				.homeBlock__logoBox
-			mixin verticalListItemMix(link, nameLink)
-				include productSection.pug
-			+verticalListItemMix('#', 'HOME')
-			+verticalListItemMix('#', 'PORTFOLIO')
-			+verticalListItemMix('#', 'ABOUT US')
+			mixin productSectionMix(productBlockType, emptyImgBlockMix, floatMix)
+				include template/partials/productSection.pug
+			+productSectionMix('large', '1', 'left')
+			+productSectionMix('twoItems', '2', 'right')
+			+productSectionMix('fourItems', '3', 'left')
 		include template/scripts.pug
