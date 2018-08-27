@@ -11,7 +11,8 @@ html
 					+verticalListItemMix('#', 'HOME')
 					+verticalListItemMix('#', 'PORTFOLIO')
 					+verticalListItemMix('#', 'ABOUT US')
-				.header__logo
+				.header__logoWrap
+					.header__logo
 				ul.header__list
 					mixin verticalListItemMix(link, nameLink)
 						li.header__itemList
@@ -19,4 +20,7 @@ html
 					+verticalListItemMix('#', 'HOME')
 					+verticalListItemMix('#', 'PORTFOLIO')
 					+verticalListItemMix('#', 'ABOUT US')
+		main.container
+			section.homeBlock
+				.homeBlock__logoBox
 		include template/scripts.pug
