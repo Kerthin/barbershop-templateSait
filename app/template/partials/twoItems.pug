@@ -1,0 +1,6 @@
+.productBlock__productItemsWrap
+	mixin porductItemMix(size)
+		include productItem.pug
+		include productItem.pug
+		div(class=`productItem__logo productItem__logo_${logoImgMix}`)
+	+porductItemMix('quarter')
