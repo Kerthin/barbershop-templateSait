@@ -6,7 +6,7 @@ div(class=`productBlock ${floatMix}`)
 			h2.productBlock__contentSubtitle= contentSubtitleMix
 		.productBlock__productItemsWrap
 			case `${productBlockType}`
-				when 'large'
+				when 'largeItem'
 					include largeItem.pug
 				when 'twoItems'
 					include twoItems.pug

@@ -1,6 +1,5 @@
-mixin porductItemMix(size)
+include fourItemsArray.pug
+mixin productItemMix(item)
 	include productItem.pug
-	include productItem.pug
-	include productItem.pug
-	include productItem.pug
-+porductItemMix('quarter')
+for item in fourItemsArray
+	+productItemMix(item)

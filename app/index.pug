@@ -23,9 +23,23 @@ html
 		main.container
 			section.homeBlock
 				.homeBlock__logoBox
-			mixin productSectionMix(productBlockType, emptyImgBlockMix, floatMix)
+			mixin productSectionMix(productBlockType, emptyImgBlockMix, floatMix, contentTitleMix,  contentSubtitleMix, productItemSize1Array, productItemBgImg1Array, display1Array, nameItem1Array, priceItem1Array, productItemSize2Array, productItemBgImg2Array, display2Array, nameItem2Array, priceItem2Array, productItemSize3Array, productItemBgImg3Array, display3Array, nameItem3Array, priceItem3Array, productItemSize4Array, productItemBgImg4Array, display4Array, nameItem4Array, priceItem4Array)
 				include template/partials/productSection.pug
-			+productSectionMix('large', '1', 'left')
-			+productSectionMix('twoItems', '2', 'right')
-			+productSectionMix('fourItems', '3', 'left')
+			+productSectionMix(	'twoItems', '1', 'left', 'The classic Gentelman', 'LoremIpsum dolor sit amet',
+								'productItem_size_quanter','productItem__img_bg_nojnici', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$120.00',
+								'productItem_size_quanter', 'productItem__img_bg_nojnici', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$120.00')
+			+productSectionMix(	'fourItems', '2', 'right', 'The classic Gentelman', 'LoremIpsum dolor sit amet',
+								'productItem_size_quanter', 'productItem__img_bg_nojnici', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$10.00',
+								'productItem_size_quanter', 'productItem__img_bg_stul', 'productItem__reminderItemWrap_display_none', 'Lorem ipsum', '$10.00',
+								'productItem_size_quanter', 'productItem__img_bg_nojnici', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$10.00',
+								'productItem_size_quanter', 'productItem__img_bg_stul', 'productItem__reminderItemWrap_display_none', 'Lorem ipsum', '$10.00')
+			+productSectionMix(	'largeItem', '3', 'left', 'The classic Gentelman', 'LoremIpsum dolor sit amet',
+								'productItem_size_quanter', 'productItem__img_bg_nojnici', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$210.00')
+			+productSectionMix(	'largeItem', '4', 'right', 'The classic Gentelman', 'LoremIpsum dolor sit amet',
+								'productItem_size_quanter', 'productItem__img_bg_nojnici', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$320.00')
+			+productSectionMix(	'fourItems', '5', 'left', 'The classic Gentelman', 'LoremIpsum dolor sit amet',
+								'productItem_size_quanter', 'productItem__img_bg_nojnici', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$20.00',
+								'productItem_size_quanter', 'productItem__img_bg_stul', 'productItem__reminderItemWrap_display_none', 'Lorem ipsum', '$20.00',
+								'productItem_size_quanter', 'productItem__img_bg_nojnici', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$20.00',
+								'productItem_size_quanter', 'productItem__img_bg_stul', 'productItem__reminderItemWrap_display_none', 'Lorem ipsum', '$20.00')
 		include template/scripts.pug

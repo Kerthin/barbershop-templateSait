@@ -1,5 +1,6 @@
-mixin porductItemMix(size)
+include fourItemsArray.pug
+mixin productItemMix(item)
 	include productItem.pug
-	include productItem.pug
+for item in twoItemsArray
+	+productItemMix(item)
 	div(class=`productItem__logo productItem__logo_${logoImgMix}`)
-+porductItemMix('quarter')
