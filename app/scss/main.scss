@@ -1,4 +1,10 @@
 @import '../../bower_components/reset.scss/reset.scss';
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
 .header {
 	width: 100%;
 	height: 100px;
@@ -32,6 +38,11 @@
 					font-size: 1.5vmin;
 					text-decoration: none;
 					color: #fff;
+					transition: all .5s;
+
+					&:hover {
+						color: #ccad00;
+					}
 				}
 			}
 		}
@@ -75,6 +86,256 @@
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;
+		}
+	}
+
+	.productSection {
+		width: 100%;
+		height: 100vh;
+
+		.productBlock {
+			width: 35%;
+			height: 100%;
+			display: block;
+
+			.productBlock__contentBox {
+				width: 80%;
+				height: 90%;
+				position: relative;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				.productBlock__contentTitleWrap {
+					width: 100%;
+					height: 12%;
+					text-align: center;
+					display: table;
+
+					.productBlock__contentTitle {
+						display: table-cell;
+						vertical-align: middle;
+						font-family: 'Roboto', sans-serif;
+						font-size: 3vmin;
+					}
+				}
+
+				.productBlock__contentSubtitleWrap {
+					width: 100%;
+					height: 8%;
+					text-align: center;
+					display: table;
+
+					.productBlock__contentSubtitle {
+						color: gray;
+						display: table-cell;
+						vertical-align: top;
+						font-family: 'Roboto', sans-serif;
+						font-style: italic;
+						font-weight: 300;
+						font-size: 1.4vmin;
+					}
+				}
+
+				.productBlock__productItemsWrap {
+					width: 100%;
+					height: 80%;
+
+					.productBlock__productItem {
+						&.productItem {
+							display: block;
+							float: left;
+
+							&.productItem_size_large {
+								width: 100%;
+								height: 100%;
+							}
+							&.productItem_size_quarter {
+								width: 50%;
+								height: 50%;
+							}
+
+							.productItem__contentBox {
+								width: 90%;
+								height: 90%;
+								position: relative;
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+
+								.productItem__img {
+									width: 100%;
+									height: 85%;
+									background-color: #f7f7f9;
+									background-size: contain;
+									background-position: center;
+									background-repeat: no-repeat;
+
+									.productItem__reminderItemWrap {
+										position: absolute;
+										width: 50px;
+										height: 20px;
+										text-align: center;
+										top: 10px;
+										left: 10px;
+										background-color: #94a182;
+
+										.productItem__reminderItem {
+											display: table-cell;
+											vertical-align: middle;
+											font-family: 'Roboto', sans-serif;
+											font-size: 14px;
+											color: #fff;
+										}
+
+										&.productItem__reminderItemWrap_display_table {
+											display: table;
+										}
+
+										&.productItem__reminderItemWrap_display_none {
+											display: none;
+										}
+									}
+
+									&.productItem__img_bg_stand {
+										background-image: url('../image/stand.png');
+									}
+
+									&.productItem__img_bg_straightRazor {
+										background-image: url('../image/straightRazor.png');
+									}
+
+									&.productItem__img_bg_comb {
+										background-image: url('../image/comb.png');
+									}
+
+									&.productItem__img_bg_shoesBrown {
+										background-image: url('../image/shoesBrown.png');
+									}
+
+									&.productItem__img_bg_shavingMachine {
+										background-image: url('../image/shavingMachine.png');
+									}
+									
+									&.productItem__img_bg_pipe {
+										background-image: url('../image/pipe.png');
+									}
+
+									&.productItem__img_bg_phone {
+										background-image: url('../image/phone.png');
+									}
+
+									&.productItem__img_bg_chair {
+										background-image: url('../image/chair.png');
+									}
+
+									&.productItem__img_bg_shoes {
+										background-image: url('../image/shoes.jpg');
+									}
+
+									&.productItem__img_bg_straightRazor2 {
+										background-image: url('../image/straightRazor2.png');
+									}
+
+									&.productItem__img_bg_brush {
+										background-image: url('../image/brush.png');
+									}
+								}
+
+								.productItem__nameItemWrap {
+									width: 85%;
+									height: 10%;
+									display: table;
+									float: left;
+
+									.productItem__nameItem {
+										display: table-cell;
+										vertical-align: middle;
+										font-family: 'Roboto', sans-serif;
+										font-size: 1.2vmin;
+									}
+								}
+								.productItem__likeItemWrap {
+									width: 15%;
+									height: 10%;
+									text-align: right;
+									display: table;
+									float: left;
+
+									.far,
+									.fas {
+										display: table-cell;
+										vertical-align: middle;
+										font-size: 16px;
+										cursor: pointer;
+									}
+									.far {
+										color: gray;
+									}
+									.fas {
+										color: red;
+									}
+								}
+
+								.productItem__priceItemWrap {
+									width: 100%;
+									height: 5%;
+									display: table;
+
+									.productItem__priceItem {
+										display: table-cell;
+										vertical-align: middle;
+										font-family: 'Roboto', sans-serif;
+										font-size: 1vmin;
+										color: gray;
+									}
+								}
+							}
+						}
+					}
+
+					.productItem__logo {
+						margin-top: 15%;
+						width: 100%;
+						height: 30%;
+						display: block;
+						float: left;
+						background-image: url('../image/barbershopContentLogo.png');
+						background-size: contain;
+						background-position: center;
+						background-repeat: no-repeat;
+					}
+				}
+			}
+		}
+
+		.emptyImgBlock {
+			width: 65%;
+			height: 100%;
+			display: block;
+			background-image: url('image/barberman.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+
+			&.emptyImgBlock_bg_1 {
+				background-image: url('../image/emptyImgBlock_bg_1.jpg');
+			}
+			&.emptyImgBlock_bg_2 {
+				background-image: url('../image/emptyImgBlock_bg_2.jpg');
+			}
+			&.emptyImgBlock_bg_3 {
+				background-image: url('../image/emptyImgBlock_bg_3.jpg');
+			}
+			&.emptyImgBlock_bg_4 {
+				background-image: url('../image/emptyImgBlock_bg_4.jpg');
+			}
+			&.emptyImgBlock_bg_5 {
+				background-image: url('../image/emptyImgBlock_bg_5.jpg');
+			}
+			&.emptyImgBlock_bg_6 {
+				background-image: url('../image/emptyImgBlock_bg_6.jpg');
+			}
 		}
 	}
 }
