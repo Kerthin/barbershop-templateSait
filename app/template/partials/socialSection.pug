@@ -1,0 +1,22 @@
+section.socialSection
+	.socialBlock
+		.socialBlock__iconWrap
+			ul.socialBlock__iconList
+				mixin horizontalListItemMix(link, nameFontClass)
+					li.socialBlock__iconItemList
+						i.fab(class=`fa-${nameFontClass}` href=(`${link}`))
+				+horizontalListItemMix('http://facebook.com', 'facebook-f')
+				+horizontalListItemMix('http://pinterest.com', 'pinterest')
+				+horizontalListItemMix('http://twitter.com', 'twitter')
+				+horizontalListItemMix('http://instagram.com', 'instagram')
+				+horizontalListItemMix('http://youtube.com', 'youtube')
+		.socialBlock__footerNavWrap
+			ul.socialBlock__footerList
+				mixin horizontalListItemMix(link, nameLink)
+					li.socialBlock__footerItemList
+						a.socialBlock__footerItemLink(href=(`${link}`))= nameLink
+				+horizontalListItemMix('#', 'Blog')
+				+horizontalListItemMix('#', 'About Us')
+				+horizontalListItemMix('#', 'FAQs')
+				+horizontalListItemMix('#', 'Client booking')
+				+horizontalListItemMix('#', 'Contact')

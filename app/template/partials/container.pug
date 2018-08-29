@@ -1,0 +1,23 @@
+main.container
+	include homeBlock.pug
+	mixin productSectionMix(sectionIdMix, productBlockType, emptyImgBlockMix, floatMix, contentTitleMix,  contentSubtitleMix, productItemSize1Array, productItemBgImg1Array, display1Array, nameItem1Array, priceItem1Array, productItemSize2Array, productItemBgImg2Array, display2Array, nameItem2Array, priceItem2Array, productItemSize3Array, productItemBgImg3Array, display3Array, nameItem3Array, priceItem3Array, productItemSize4Array, productItemBgImg4Array, display4Array, nameItem4Array, priceItem4Array)
+		include productSection.pug
+	+productSectionMix(	'one' ,'twoItems', '1', 'left', "Some things <br> simply won`t go <br> out of style", '',
+						'productItem_size_quarter','productItem__img_bg_stand', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$120.00',
+						'productItem_size_quarter', 'productItem__img_bg_straightRazor', 'productItem__reminderItemWrap_display_none', 'Lorem ipsum', '$120.00')
+	+productSectionMix(	'two' ,'fourItems', '2', 'right', 'THE CLASSIC <br> GENTLEMAN', 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+						'productItem_size_quarter', 'productItem__img_bg_comb', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$10.00',
+						'productItem_size_quarter', 'productItem__img_bg_shoesBrown', 'productItem__reminderItemWrap_display_none', 'Lorem ipsum', '$10.00',
+						'productItem_size_quarter', 'productItem__img_bg_shavingMachine', 'productItem__reminderItemWrap_display_none', 'Lorem ipsum', '$10.00',
+						'productItem_size_quarter', 'productItem__img_bg_pipe', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$10.00')
+	+productSectionMix(	'three' ,'largeItem', '3', 'left', "CALL `EM OFTEN", 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+						'productItem_size_large', 'productItem__img_bg_phone', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$210.00')
+	+productSectionMix(	'four' ,'largeItem', '4', 'right', 'ESSENTIAL <br> BARBER SUPPLIES', 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+						'productItem_size_large', 'productItem__img_bg_chair', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$320.00')
+	+productSectionMix(	'five' ,'fourItems', '5', 'left', 'CLIPPERS <br> AND TRIMMERS', 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+						'productItem_size_quarter', 'productItem__img_bg_phone', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$20.00',
+						'productItem_size_quarter', 'productItem__img_bg_shoes', 'productItem__reminderItemWrap_display_table', 'Lorem ipsum', '$20.00',
+						'productItem_size_quarter', 'productItem__img_bg_straightRazor2', 'productItem__reminderItemWrap_display_none', 'Lorem ipsum', '$20.00',
+						'productItem_size_quarter', 'productItem__img_bg_brush', 'productItem__reminderItemWrap_display_none', 'Lorem ipsum', '$20.00')
+	include textSection.pug
+	include socialSection.pug
