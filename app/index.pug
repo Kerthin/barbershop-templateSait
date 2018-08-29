@@ -8,20 +8,21 @@ html
 					mixin horizontalListItemMix(link, nameLink)
 						li.header__itemList
 							a(class="header__itemLink" href=(`${link}`))= nameLink
-					+horizontalListItemMix('#one', 'HOME')
-					+horizontalListItemMix('#two', 'PORTFOLIO')
-					+horizontalListItemMix('#three', 'ABOUT US')
+					+horizontalListItemMix('#one', 'STYLE')
+					+horizontalListItemMix('#two', 'CLASSIC')
+					+horizontalListItemMix('#three', 'CALL')
 				.header__logoWrap
-					.header__logo
+					a(href="#home")
+						.header__logo
 				ul.header__list
 					mixin horizontalListItemMix(link, nameLink)
 						li.header__itemList
 							a(class="header__itemLink" href=(`${link}`))= nameLink
-					+horizontalListItemMix('#four', 'HOME')
-					+horizontalListItemMix('#five', 'PORTFOLIO')
+					+horizontalListItemMix('#four', 'SUPPLIES')
+					+horizontalListItemMix('#five', 'TRIMMERS')
 					+horizontalListItemMix('#six', 'ABOUT US')
 		main.container
-			section.homeBlock
+			section#home.homeBlock
 				.homeBlock__logoBox
 			mixin productSectionMix(sectionIdMix, productBlockType, emptyImgBlockMix, floatMix, contentTitleMix,  contentSubtitleMix, productItemSize1Array, productItemBgImg1Array, display1Array, nameItem1Array, priceItem1Array, productItemSize2Array, productItemBgImg2Array, display2Array, nameItem2Array, priceItem2Array, productItemSize3Array, productItemBgImg3Array, display3Array, nameItem3Array, priceItem3Array, productItemSize4Array, productItemBgImg4Array, display4Array, nameItem4Array, priceItem4Array)
 				include template/partials/productSection.pug
