@@ -67,6 +67,57 @@
 			}
 		}
 	}
+
+	.header__humburgerMenu {
+		cursor: pointer;
+		-webkit-tap-highlight-color: transparent;
+		transition: transform 400ms;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		display: block;
+		display: none;
+		float: right;
+		width: 80px;
+
+		&.active {
+			transform: rotate(45deg);
+
+			.header__lineTop {
+				stroke-dasharray: 17 82;
+				stroke-dashoffset: -62px;
+			}
+			.header__lineMiddle {
+				stroke-dashoffset: 23px;
+			}
+			.header__lineBottom {
+				stroke-dashoffset: -83px;
+			}
+		}
+
+		.header__line {
+			fill:none;
+			transition: stroke-dasharray .4s, stroke-dashoffset .4s;
+			stroke:#ccad00;
+			stroke-width:5.5;
+			stroke-linecap:round;
+
+			&.header__lineTop {
+				stroke-dasharray: 40 82;
+			}
+			&.header__lineMiddle {
+				stroke-dasharray: 40 111;
+			}
+			&.header__lineBottom {
+				stroke-dasharray: 40 161;
+			}
+		}
+
+		@media screen and (max-width: 1024px) {
+			display: block;
+		}
+	}
 }
 .container {
 	width: 100%;
