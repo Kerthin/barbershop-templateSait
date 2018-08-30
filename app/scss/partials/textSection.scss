@@ -1,0 +1,86 @@
+.textSection {
+	width: 100%;
+	height: 100vh;
+
+	@media screen and (max-width: 1024px) {
+		height: 200vh;
+	}
+
+	.textBlock {
+		width: 35%;
+		height: 100%;
+
+		@media screen and (max-width: 1440px) {
+			width: 50%;
+		}
+
+		@media screen and (max-width: 1024px) {
+			width: 100%;
+			height: 50%;
+		}
+
+		.textBlock__contentBox {
+			width: 80%;
+			height: 90%;
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			.textBlock__paragraphWrap {
+				width: 100%;
+				height: 70%;
+				text-align: justify;
+
+				.textBlock__paragraph {
+					font-family: 'Roboto', sans-serif;
+					font-weight: 500;
+					font-size: 1.8vmin;
+
+					&:first-letter {
+						font-size:6em;
+						font-weight: 500;
+						float:left;
+						margin-top:-10px;
+						margin-right: 20px;
+					}
+
+					@media screen and (max-width: 1024px) {
+						font-size: 3vmin;
+					}
+				}
+			}
+
+			.textBlock__logo {
+				width: 100%;
+				height: 30%;
+				background-image: url('../image/barbershopContentLogo.png');
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+}
+
+.emptyImgBlock {
+	width: 65%;
+	height: 100%;
+	display: block;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&.emptyImgBlock_bg_6 {
+		background-image: url('../image/emptyImgBlock_bg_6.jpg');
+	}
+
+	@media screen and (max-width: 1440px) {
+		width: 50%;
+	}
+
+	@media screen and (max-width: 1024px) {
+		width: 100%;
+		height: 50%;
+	}
+}

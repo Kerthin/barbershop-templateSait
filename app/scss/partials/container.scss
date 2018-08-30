@@ -1,0 +1,11 @@
+.container {
+	width: 100%;
+
+	@import 'homeBlock.scss';
+
+	@import 'productSection.scss';
+
+	@import 'textSection.scss';
+
+	@import 'socialSection.scss';
+}
