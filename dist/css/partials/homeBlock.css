@@ -1,21 +1,2 @@
-.homeBlock {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../image/barbershopHomeBg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  .homeBlock .homeBlock__logoBox {
-    width: 35%;
-    height: 35%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    background-image: url("../image/barbershopHomeLogoWhite.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat; }
-
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhcnRpYWxzL2hvbWVCbG9jay5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0MsWUFBVztFQUNYLGNBQWE7RUFDYix1REFBc0Q7RUFDdEQsdUJBQXNCO0VBQ3RCLDRCQUEyQjtFQUMzQiw2QkFBNEIsRUFjNUI7RUFwQkQ7SUFTRSxXQUFVO0lBQ1YsWUFBVztJQUNYLG1CQUFrQjtJQUNsQixTQUFRO0lBQ1IsVUFBUztJQUNULHlDQUFnQztZQUFoQyxpQ0FBZ0M7SUFDaEMsOERBQTZEO0lBQzdELHlCQUF3QjtJQUN4Qiw0QkFBMkI7SUFDM0IsNkJBQTRCLEVBQzVCIiwiZmlsZSI6InBhcnRpYWxzL2hvbWVCbG9jay5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaG9tZUJsb2NrIHtcblx0d2lkdGg6IDEwMCU7XG5cdGhlaWdodDogMTAwdmg7XG5cdGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vaW1hZ2UvYmFyYmVyc2hvcEhvbWVCZy5qcGcnKTtcblx0YmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcblx0YmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuXHRiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuXG5cdC5ob21lQmxvY2tfX2xvZ29Cb3gge1xuXHRcdHdpZHRoOiAzNSU7XG5cdFx0aGVpZ2h0OiAzNSU7XG5cdFx0cG9zaXRpb246IHJlbGF0aXZlO1xuXHRcdHRvcDogNTAlO1xuXHRcdGxlZnQ6IDUwJTtcblx0XHR0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcblx0XHRiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL2ltYWdlL2JhcmJlcnNob3BIb21lTG9nb1doaXRlLnBuZycpO1xuXHRcdGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcblx0XHRiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG5cdFx0YmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcblx0fVxufSJdfQ== */
+.homeBlock,.homeBlock .homeBlock__logoBox{background-position:center;background-repeat:no-repeat}.homeBlock{width:100%;height:100vh;background-image:url(../image/barbershopHomeBg.jpg);background-size:cover}.homeBlock .homeBlock__logoBox{width:35%;height:35%;position:relative;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-image:url(../image/barbershopHomeLogoWhite.png);background-size:contain}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhcnRpYWxzL2hvbWVCbG9jay5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLFdBQUEsK0JBaUJFLG9CQUFBLE9BQ0Esa0JBQUEsVUFsQkYsV0FDQyxNQUFBLEtBQ0EsT0FBQSxNQUNBLGlCQUFBLG1DQUNBLGdCQUFBLE1BSkQsK0JBU0UsTUFBQSxJQUNBLE9BQUEsSUFDQSxTQUFBLFNBQ0EsSUFBQSxJQUNBLEtBQUEsSUFDQSxrQkFBQSxxQkFBQSxVQUFBLHFCQUNBLGlCQUFBLDBDQUNBLGdCQUFBIiwiZmlsZSI6InBhcnRpYWxzL2hvbWVCbG9jay5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaG9tZUJsb2NrIHtcblx0d2lkdGg6IDEwMCU7XG5cdGhlaWdodDogMTAwdmg7XG5cdGJhY2tncm91bmQtaW1hZ2U6IHVybCgnLi4vaW1hZ2UvYmFyYmVyc2hvcEhvbWVCZy5qcGcnKTtcblx0YmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcblx0YmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuXHRiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuXG5cdC5ob21lQmxvY2tfX2xvZ29Cb3gge1xuXHRcdHdpZHRoOiAzNSU7XG5cdFx0aGVpZ2h0OiAzNSU7XG5cdFx0cG9zaXRpb246IHJlbGF0aXZlO1xuXHRcdHRvcDogNTAlO1xuXHRcdGxlZnQ6IDUwJTtcblx0XHR0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcblx0XHRiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy4uL2ltYWdlL2JhcmJlcnNob3BIb21lTG9nb1doaXRlLnBuZycpO1xuXHRcdGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcblx0XHRiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG5cdFx0YmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcblx0fVxufSJdfQ== */
